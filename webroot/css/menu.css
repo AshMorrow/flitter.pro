@@ -1,0 +1,19 @@
+/*** main menu ***/
+
+#main_menu{
+    font-size: 1.4rem;
+    flex-grow: 1;
+}
+
+#main_menu a{
+    text-decoration: none;
+    color: #333;
+    font-family: Akrobat;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.main_open_request button{
+    height: 40px;
+    padding: 0px 15px;
+}

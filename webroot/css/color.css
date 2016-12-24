@@ -1,0 +1,29 @@
+/*** buttons ***/
+
+.button_gradient{
+    border: 0;
+    outline: 0;
+    background: linear-gradient(to right, #d89b3f, #ebc08a);
+    color: #fff;
+    font-family: Akrobat;
+    font-size: 1.4rem;
+}
+
+.show_more_btn{
+    border: 1px solid;
+    outline: 0;
+    font-family: Akrobat;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.show_more_btn:hover{
+    background: linear-gradient(to right, #d89b3f, #ebc08a);
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+/*** end buttons ***/
