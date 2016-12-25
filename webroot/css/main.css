@@ -356,3 +356,91 @@ button:hover{
     font-size: 1.2rem;
     color: #fff;
 }
+
+#contact_us_popup{
+    position: fixed;
+    z-index: 99;
+    top: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact_us_popup .form_popup_head{
+    text-align: right;
+}
+
+#contact_us_popup .form_popup_head img{
+    width: 15px;
+    padding: 10px 15px;
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+#contact_us_popup .form_popup_head img:hover{
+    cursor: pointer;
+}
+#contact_us_popup .form_popup_label{
+    font-family: Akrobat;
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#contact_us_popup .input_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#contact_us_popup .input_container .input_container_left{
+    margin-right: 15px;
+    max-width: 300px;
+    width: 100%;
+}
+
+#contact_us_popup .input_container .input_container_left input{
+    background: transparent;
+    border: 1px solid #fff;
+    outline: 0;
+    height: 30px;
+    max-width: 278px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#contact_us_popup .input_container .label{
+    color: #fff;
+    margin-bottom: 10px;
+}
+#contact_us_popup .input_container .input_container_right{
+    width: 100%;
+    max-width: 380px;
+}
+#contact_us_popup .input_container textarea{
+    max-width: 380px;
+    height: 150px;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-grow: 1;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+#contact_us_popup .form_submit{
+    margin: 20px 10px 0px 10px;
+    text-align: center;
+}
+#contact_us_popup .form_submit button{
+    height: 32px;
+}
