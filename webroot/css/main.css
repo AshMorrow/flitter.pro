@@ -6,9 +6,23 @@ body{
 
 }
 
+
 a{
     text-decoration: none;
     color: #333333;
+}
+
+div#load_in_process{
+    background-color: #000;
+    background-image: url("/img/spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 button:hover{

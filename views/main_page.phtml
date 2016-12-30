@@ -1,22 +1,11 @@
 <header id="section_1" class="main_slider_img">
     <div class="main_slide_content">
-        <div class="main_nav_bar">
-            <div class="main_slider_logo">
-                <img src="/img/logo/logo_big.png" alt="logo">
-            </div>
-            <nav id="main_menu">
-                <a href="/">Главная</a>
-                <a href="/services">Услуги</a>
-                <a href="/portfolio">Портфолио</a>
-                <a href="/about">О нас</a>
-                <a href="/contacts">Контакты</a>
-            </nav>
-            <div class="main_open_request">
-                <button class="button_gradient" onclick="contactUs.show()">Оставить заявку</button>
-            </div>
-        </div>
+        <?php
+        Menu::render_menu();
+        Menu::render_scroll_menu()
+        ?>
         <div class="main_slider_text">
-            Разработка<br>  и дизайн <br>
+            Разработка<br> и дизайн <br>
             сайтов
         </div>
         <div class="main_scroll_down" onclick="arrowDownClick(this)">
@@ -147,7 +136,7 @@
         </script>
     </div>
     <div class="show_all_works">
-        <button class="button_gradient"><a href="#">Все работы</a></button>
+        <button class="button_gradient"><a href="/portfolio">Все работы</a></button>
     </div>
 </section>
 

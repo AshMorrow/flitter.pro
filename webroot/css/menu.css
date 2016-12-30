@@ -15,5 +15,55 @@
 
 .main_open_request button{
     height: 40px;
-    padding: 0px 15px;
+    width: 180px;
+    padding: 0 15px;
+}
+
+/*** scroll menu ***/
+
+#scroll_menu_wrap{
+    display: flex;
+    background: #fff;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 0 12px -1px;
+    display: none;
+}
+
+#scroll_menu_wrap .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#scroll_menu_wrap .logo img{
+    height: 45px;
+    margin-right: 20px;
+}
+
+#scroll_menu_wrap nav{
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+}
+#scroll_menu_wrap nav a{
+    max-width: 130px;
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+    font-family: Akrobat;
+    font-size: 1.2rem;
+}
+#scroll_menu_wrap nav .active{
+    color: #dba758;
+}
+
+#scroll_menu_wrap .main_open_request{
+    margin-left: 20px;
 }
