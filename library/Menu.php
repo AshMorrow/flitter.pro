@@ -48,7 +48,7 @@ class Menu
                 ?>
             </nav>
             <div class="main_open_request">
-                <button class="button_gradient" onclick="contactUs.show()">Оставить заявку</button>
+                <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
             </div>
         </div>
         <?php
@@ -77,7 +77,7 @@ class Menu
                 ?>
             </nav>
             <div class="main_open_request">
-                <button class="button_gradient" onclick="contactUs.show()">Оставить заявку</button>
+                <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
             </div>
             </div>
         </div>

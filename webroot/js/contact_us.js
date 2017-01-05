@@ -1,10 +1,27 @@
 var contactUs = function () {
 };
 
-contactUs.event = '';
-contactUs.container = '';
+contactUs.eventResize = function () {
 
-contactUs.show = function () {
+    var document_height = document.documentElement.clientHeight - 40;
+    var document_width = document.documentElement.clientWidth - 40;
+
+    $(contactUs.container).css({
+        'width': document_width,
+        'height': document_height
+    });
+};
+
+contactUs.eventScroll = function (e) {
+    window.scrollTo(0,contactUs.scrollPosition);
+};
+
+contactUs.container = '';
+contactUs.scrollPosition = '';
+
+contactUs.show = function (obj) {
+
+    $(obj).blur();
 
     var document_height = document.documentElement.clientHeight - 40;
     var document_width = document.documentElement.clientWidth - 40;
@@ -59,26 +76,31 @@ contactUs.show = function () {
 
     $(form_container).css({
         'width': document_width,
-        'height': document_height
+        'height': document_height,
+        'display': 'none'
     });
+
     element[0].appendChild(form_container);
-    this.container = form_container;
 
-   this.event = window.addEventListener('resize',function (form_container) {
-
-        var document_height = document.documentElement.clientHeight - 40;
-        var document_width = document.documentElement.clientWidth - 40;
-
-        $(contactUs.container).css({
-            'width': document_width,
-            'height': document_height
+    $(form_container).fadeIn(function () {
+        $(this).css({
+            'display': 'flex'
         });
-    })
+    });
+
+    this.container = form_container;
+    this.scrollPosition = $(document).scrollTop();
+
+    window.addEventListener('resize', this.eventResize);
+    window.addEventListener('scroll',this.eventScroll)
 };
 
 contactUs.close = function () {
 
-    window.removeEventListener('resize',this.event);
-    $(this.container).remove();
+    window.removeEventListener('resize',this.eventResize);
+    window.removeEventListener('scroll',this.eventScroll);
+    $(this.container).fadeOut(function () {
+        $(this).remove();
+    });
 
 };

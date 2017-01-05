@@ -7,6 +7,10 @@
     color: #fff;
     font-family: Akrobat;
     font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+    flex-shrink: 0;
+    justify-content: center;
 }
 
 .show_more_btn{
