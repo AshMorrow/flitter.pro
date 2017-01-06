@@ -3,8 +3,8 @@ var contactUs = function () {
 
 contactUs.eventResize = function () {
 
-    var document_height = document.documentElement.clientHeight - 40;
-    var document_width = document.documentElement.clientWidth - 40;
+    var document_height = document.documentElement.clientHeight;
+    var document_width = document.documentElement.clientWidth;
 
     $(contactUs.container).css({
         'width': document_width,
@@ -23,8 +23,8 @@ contactUs.show = function (obj) {
 
     $(obj).blur();
 
-    var document_height = document.documentElement.clientHeight - 40;
-    var document_width = document.documentElement.clientWidth - 40;
+    var document_height = document.documentElement.clientHeight;
+    var document_width = document.documentElement.clientWidth;
 
     var element = document.getElementsByTagName('body');
 

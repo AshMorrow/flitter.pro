@@ -1,0 +1,93 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+section .contact_form{
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+}
+
+section .contact_form .label{
+    font-family: Akrobat;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section .contact_form .contact_form_fields{
+    margin: 0px 10px;
+}
+section .contact_form .title{
+    font-family: Akrobat;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+section .contact_form .data{
+    display: flex;
+}
+section .contact_form input{
+    height: 30px;
+    padding: 0px 5px;
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+}
+
+section .contact_form textarea{
+    height: 150px;
+    resize: none;
+    padding: 5px 5px;
+    width: 100%;
+    max-width: 388px;
+}
+
+section .contact_form .send_form{
+    margin: 10px;
+}
+
+section .contact_form .send_form button{
+    font-size: 1.3rem;
+}
+
+/*** contacts ***/
+
+section .contacts{
+    margin: 0px 10px;
+}
+
+section .contacts .label{
+    font-family: Akrobat;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+section .contacts div{
+    font-family: OpenSans;
+}
+
+section .contacts .phones{
+    margin: 30px 0px;
+    display: flex;
+}
+
+section .contacts .phones .title{
+        width: 140px;
+}
+
+section .contacts .phones .data div:first-child{
+    margin-bottom: 6px;
+}
+
+section .contacts .email{
+    display: flex;
+}
+
+section .contacts .email .title{
+    width: 140px;
+}

@@ -72,6 +72,8 @@ button:hover{
 .main_slider_logo{
     flex-grow: 1;
     max-width: 260px;
+    display: flex;
+    min-width: 100px;
 }
 .main_slider_logo img{
     max-width: 100%;
@@ -374,8 +376,8 @@ button:hover{
 #contact_us_popup{
     position: fixed;
     z-index: 99;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     background: rgba(0,0,0,0.93);
     margin: 0 auto;
     overflow: auto;
@@ -402,7 +404,7 @@ button:hover{
 #contact_us_popup .form_popup_label{
     font-family: Akrobat;
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 5vmin;
     text-align: center;
 }
 #contact_us_popup .input_container{

@@ -14,6 +14,7 @@ html, body {
     flex-grow: 1;
     flex-direction: column;
     flex-shrink: 0;
+    width: 100%;
 }
 .content_wrapper:after {
     content: "";
