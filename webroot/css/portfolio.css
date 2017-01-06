@@ -1,0 +1,9 @@
+.portfolio_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.portfolio_container .portfolio_element:hover{
+    cursor: pointer;
+}

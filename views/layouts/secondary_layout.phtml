@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="/css/color.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/secondary.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/<?= Menu::$current_page ?>.css">
 
     <!-- include js files -->
 
@@ -37,6 +39,7 @@
     <script src="/js/main_portfolio.js"></script>
     <script src="/js/wow.min.js"></script>
     <script src="/js/contact_us.js"></script>
+    <script src="/js/popup.js"></script>
 
     <script>
         var wow = new WOW().init();
@@ -46,8 +49,8 @@
 <div id="load_in_process"></div>
 <header>
     <?php
-        Menu::render_menu();
-        Menu::render_scroll_menu()
+    Menu::render_menu();
+    Menu::render_scroll_menu()
     ?>
 
 </header>
@@ -55,8 +58,19 @@
     <?= $content ?>
 </div>
 <footer>
-
+    <div class="wrap">
+        <div class="f_phones">
+            <div>+38 (095) 2144 880</div>
+            <div>+38 (095) 2144 880</div>
+        </div>
+        <div class="f_emails">
+            <div>info@flitter.pro</div>
+        </div>
+        <div class="f_date">&copy; 2016, Flitter</div>
+        <div class="f_contact_btn">
+            <div class="show_more_btn" onclick="contactUs.show(this)">Оставить заявку</div>
+        </div>
+    </div>
 </footer>
-
 </body>
 </html>

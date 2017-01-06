@@ -2,8 +2,25 @@
     Портфолио
 </div>
 <div class="portfolio_menu">
-    <div class="items active">Все работы</div>
-    <div class="items">Расработка</div>
-    <div class="items">Веб-дизайн</div>
-    <div class="items">Логотипы</div>
+    <div class="items active" data-type="all" onclick="portfolio_filter(this)">Все работы</div>
+    <div class="items" data-type='site' onclick="portfolio_filter(this)">Разработка</div>
+    <div class="items" data-type='design' onclick="portfolio_filter(this)">Веб-дизайн</div>
+    <div class="items" data-type='logo' onclick="portfolio_filter(this)">Логотипы</div>
+</div>
+<div class="portfolio_container">
+    <?php
+        $images = Portfolio::getImages();
+        foreach ($images as $folder => $image):
+            foreach ($image as $img_name):
+                if($img_name == '.' || $img_name == '..') continue;
+
+    ?>
+    <div class="portfolio_element" data-type='<?=$folder?>'>
+        <img onclick="popUp.portfolioFull('<?= $folder ?>', '<?= $img_name ?>')" src='<?=Portfolio::$thumbs_web_pass.$folder.'\\'.$img_name?>' alt="portfolio_element">
+    </div>
+    <?php
+            endforeach;
+        endforeach;
+    ?>
+
 </div>

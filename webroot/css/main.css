@@ -450,6 +450,7 @@ button:hover{
     color: #fff;
     padding: 10px;
     font-size: 1.2rem;
+    resize: none;
 }
 #contact_us_popup .form_submit{
     margin: 20px 10px 0px 10px;

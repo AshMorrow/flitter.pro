@@ -67,3 +67,31 @@
 #scroll_menu_wrap .main_open_request{
     margin-left: 20px;
 }
+
+/*** portfolio menu ***/
+
+.portfolio_menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio_menu .items{
+    font-family: Akrobat;
+    font-weight: 600;
+    margin: 0px 10px;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    border-bottom: 1px dashed;
+    transition: all 0.3s;
+}
+
+.portfolio_menu .items.active{
+    border-bottom: 0;
+}
+
+.portfolio_menu .items:hover{
+    border-bottom: 1px dashed #d89c41;
+    cursor:pointer;
+    transition: all 0.3s;
+}

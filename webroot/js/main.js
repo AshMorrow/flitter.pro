@@ -26,5 +26,21 @@ function show_scroll_menu() {
         $('#scroll_menu_wrap').slideUp();
         console.log('up');
     }
+}
+
+function portfolio_filter(obj) {
+    if($(obj).hasClass('active')) return;
+
+    $('.portfolio_menu .items').removeClass('active');
+    $(obj).addClass('active');
+
+    var type = $(obj).attr('data-type');
+    if(type == 'all'){
+        $('.portfolio_element').fadeIn();
+        return;
+    }
+
+    $('.portfolio_element').hide();
+    $('.portfolio_element[data-type="'+type+'"]').fadeIn();
 
 }

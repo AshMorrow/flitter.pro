@@ -21,11 +21,46 @@ html, body {
 }
 footer, .content_wrapper:after {
     height: 120px;
+    flex-shrink: 0;
 }
 footer {
     background: #333333;
+    display: flex;
 }
 
+footer div.wrap{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer div{
+    color: #cccbcb;
+    text-align: center;
+}
+
+footer .f_phones,footer .f_emails{
+    max-width: 200px;
+    width: 100%;
+}
+
+footer .f_date{
+    flex-grow: 1;
+}
+footer .show_more_btn{
+    height: 25px;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .show_more_btn:hover{
+    background: transparent !important;
+    border: 1px solid;
+}
 header{
     margin-left: 66px;
     margin-right: 66px;
