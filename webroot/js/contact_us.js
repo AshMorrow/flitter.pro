@@ -57,8 +57,8 @@ contactUs.show = function (obj) {
 
     var form_inputs_right = document.createElement('div');
     form_inputs_right.className = 'input_container_right';
-    form_inputs_right.innerHTML = '<div><div class="label">Коментарий</div><div>' +
-        '<textarea class="comment"></textarea></div></div>';
+    form_inputs_right.innerHTML = '<div class="wrap" ><div class="label">Коментарий</div>' +
+        '<textarea class="comment"></textarea></div>';
 
     form_inputs_container.appendChild(form_inputs_right);
     form_container.appendChild(form_inputs_container);

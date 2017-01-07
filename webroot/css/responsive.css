@@ -3,4 +3,12 @@
         margin-left: 15px;
         margin-right: 15px;
     }
+
+    .services_more_list_wrap{
+        flex-direction: column;
+    }
+
+    .services_more_list_wrap .list_site_create{
+        width: 100%;
+    }
 }
