@@ -11,4 +11,8 @@
     .services_more_list_wrap .list_site_create{
         width: 100%;
     }
+
+    #main_menu,#scroll_menu_wrap{
+        display: none !important;
+    }
 }

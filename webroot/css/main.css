@@ -318,6 +318,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
+    margin: 0px 10px;
 }
 #section_4 .contact_form .label{
     text-align: left;
@@ -327,11 +328,13 @@ button:hover{
     margin: 10px 0px;
 }
 
-#section_4 .contact_form .contact_form_fields .data{}
+#section_4 .contact_form .contact_form_fields .data{
+    display: flex;
+}
 #section_4 .contact_form
 .contact_form_fields .data .input_field{
     height: 28px;
-    max-width: 400px;
+    /*max-width: 400px;*/
     margin-bottom: 5px;
     resize: none;
     width: 100%;
