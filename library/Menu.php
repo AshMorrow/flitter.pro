@@ -105,6 +105,31 @@ class Menu
                     }
                     ?>
                 </nav>
+                <div class="mobile_menu">
+                    <div class="mobile_menu_trigger_btn" onclick="mobileMenuOpen()">
+                        <div>
+                            Меню
+                        </div>
+                        <div>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <nav class="mobile_menu_items" style="display: none">
+                    <?php
+                    if (self::$current_url == '') {
+                        self::$current_url = '/';
+                    }
+                    foreach (self::$menu_items as $page => $item) {
+                        ?>
+                        <a href="<?= $item['url'] ?>"
+                           class="<?= (self::$current_url == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                        <?php
+                    }
+                    ?>
+                </nav>
                 <div class="main_open_request">
                     <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
                 </div>
