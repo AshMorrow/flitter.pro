@@ -84,6 +84,12 @@ button:hover{
     height: 100%;
 }
 
+.main_nav_bar_responsive{
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
 .main_slider_text{
     font-size: 7vmax;
     font-family: Akrobat;

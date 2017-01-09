@@ -34,6 +34,7 @@ class Menu
             <div class="main_slider_logo">
                 <img src="/img/logo/logo_big.png" alt="logo">
             </div>
+            <div class="main_nav_bar_responsive">
             <nav id="main_menu">
                 <?php
                 if (self::$current_page == '') {
@@ -74,6 +75,7 @@ class Menu
             </nav>
             <div class="main_open_request">
                 <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
+            </div>
             </div>
         </div>
         <?php

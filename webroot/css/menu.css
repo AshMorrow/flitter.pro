@@ -149,6 +149,7 @@
     flex-direction: column;
     background: #fff;
     top: 74px;
+    left: 0;
     width: 100%;
     border: 1px solid;
 }
