@@ -47,6 +47,31 @@ class Menu
                 }
                 ?>
             </nav>
+            <div class="mobile_menu">
+                <div class="mobile_menu_trigger_btn" onclick="mobileMenuOpen()">
+                    <div>
+                        Меню
+                    </div>
+                    <div>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+            <nav class="mobile_menu_items" style="display: none">
+                <?php
+                if (self::$current_page == '') {
+                    self::$current_page = '/';
+                }
+                foreach (self::$menu_items as $page => $item) {
+                    ?>
+                    <a href="<?= $item['url'] ?>"
+                       class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                    <?php
+                }
+                ?>
+            </nav>
             <div class="main_open_request">
                 <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
             </div>
@@ -60,25 +85,25 @@ class Menu
 
         <div id="scroll_menu_wrap">
             <div class="container">
-            <div class="logo">
-                <img src="/img/logo/logo_big.png" alt="logo">
-            </div>
-            <nav class="menu_items">
-                <?php
-                if (self::$current_page == '') {
-                    self::$current_page = '/';
-                }
-                foreach (self::$menu_items as $page => $item) {
-                    ?>
-                    <a rel="nofollow" href="<?= $item['url'] ?>"
-                       class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                <div class="logo">
+                    <img src="/img/logo/logo_big.png" alt="logo">
+                </div>
+                <nav class="menu_items">
                     <?php
-                }
-                ?>
-            </nav>
-            <div class="main_open_request">
-                <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
-            </div>
+                    if (self::$current_page == '') {
+                        self::$current_page = '/';
+                    }
+                    foreach (self::$menu_items as $page => $item) {
+                        ?>
+                        <a rel="nofollow" href="<?= $item['url'] ?>"
+                           class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                        <?php
+                    }
+                    ?>
+                </nav>
+                <div class="main_open_request">
+                    <button class="button_gradient" onclick="contactUs.show(this)">Оставить заявку</button>
+                </div>
             </div>
         </div>
 

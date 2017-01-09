@@ -16,7 +16,7 @@
 
     ?>
     <div class="portfolio_element" data-type='<?=$folder?>'>
-        <img onclick="popUp.portfolioFull('<?= $folder ?>', '<?= $img_name ?>')" src='<?=Portfolio::$thumbs_web_pass.$folder.'\\'.$img_name?>' alt="portfolio_element">
+        <img onclick="popUp.portfolioFull('<?= $folder ?>', '<?= $img_name ?>')" src='<?=Portfolio::$thumbs_web_pass.$folder.'/'.$img_name?>' alt="portfolio_element">
     </div>
     <?php
             endforeach;

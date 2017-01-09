@@ -44,7 +44,7 @@ popUp.portfolioFull = function (folder, img_name) {
 
     var container = document.createElement('div');
     container.className = 'popup_container';
-    container.innerHTML = "<img src='\\img\\portfolio\\full\\" + folder + "\\" + img_name + "' onclick='popUp.stopPropagation(event)'>";
+    container.innerHTML = "<img src='/img/portfolio/full/" + folder + "/" + img_name + "' onclick='popUp.stopPropagation(event)'>";
 
     var close = document.createElement('div');
     close.className = 'popup_close';
@@ -53,7 +53,7 @@ popUp.portfolioFull = function (folder, img_name) {
     close_inner.className = 'popup_close_inner';
     close_inner.innerHTML = '<img src="/img/icons/cross.png" alt="close" onclick="popUp.close()"/>';
 
-    close.prepend(close_inner);
+    close.appendChild(close_inner);
     container.appendChild(close);
     bg.appendChild(container);
 

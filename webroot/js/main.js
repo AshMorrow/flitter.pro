@@ -44,3 +44,12 @@ function portfolio_filter(obj) {
     $('.portfolio_element[data-type="'+type+'"]').fadeIn();
 
 }
+
+/*** mobile menu open/close function ***/
+function mobileMenuClose() {
+    $('nav.mobile_menu_items').slideUp()
+}
+
+function mobileMenuOpen() {
+    $('nav.mobile_menu_items').slideToggle()
+}

@@ -5,8 +5,8 @@ class Portfolio{
 
     public static $ignore = [];
     private static $thumbs_pass = WEBROOT_DIR.'img'.DS.'portfolio'.DS.'thumbs';
-    public static $thumbs_web_pass = '\img\portfolio\thumbs\\';
-    public static $full_web_pass = '\img\portfolio\full\\';
+    public static $thumbs_web_pass = '/img/portfolio/thumbs/';
+    public static $full_web_pass = '/img/portfolio/full/';
 
     public static function getImages(){
 

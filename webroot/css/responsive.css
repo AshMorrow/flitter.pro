@@ -15,4 +15,12 @@
     #main_menu,#scroll_menu_wrap{
         display: none !important;
     }
+    .mobile_menu{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .mobile_menu_items{
+        display: none !important;
+    }
 }
