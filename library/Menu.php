@@ -3,7 +3,7 @@
 class Menu
 {
     public static $menu_type = 'main';
-    public static $current_page = '';
+    public static $current_url = '';
     private static $menu_items = [
         '/' => [
             'text' => 'Главная',
@@ -32,18 +32,20 @@ class Menu
         ?>
         <div class="main_nav_bar">
             <div class="main_slider_logo">
-                <img src="/img/logo/logo_big.png" alt="logo">
+                <div>
+                    <img src="/img/logo/logo_big.png" alt="logo">
+                </div>
             </div>
             <div class="main_nav_bar_responsive">
             <nav id="main_menu">
                 <?php
-                if (self::$current_page == '') {
-                    self::$current_page = '/';
+                if (self::$current_url == '') {
+                    self::$current_url = '/';
                 }
                 foreach (self::$menu_items as $page => $item) {
                     ?>
                     <a href="<?= $item['url'] ?>"
-                       class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                       class="<?= (self::$current_url == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
                     <?php
                 }
                 ?>
@@ -62,13 +64,13 @@ class Menu
             </div>
             <nav class="mobile_menu_items" style="display: none">
                 <?php
-                if (self::$current_page == '') {
-                    self::$current_page = '/';
+                if (self::$current_url == '') {
+                    self::$current_url = '/';
                 }
                 foreach (self::$menu_items as $page => $item) {
                     ?>
                     <a href="<?= $item['url'] ?>"
-                       class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                       class="<?= (self::$current_url == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
                     <?php
                 }
                 ?>
@@ -92,13 +94,13 @@ class Menu
                 </div>
                 <nav class="menu_items">
                     <?php
-                    if (self::$current_page == '') {
-                        self::$current_page = '/';
+                    if (self::$current_url == '') {
+                        self::$current_url = '/';
                     }
                     foreach (self::$menu_items as $page => $item) {
                         ?>
                         <a rel="nofollow" href="<?= $item['url'] ?>"
-                           class="<?= (self::$current_page == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
+                           class="<?= (self::$current_url == $page) ? 'active' : ''; ?>"><?= $item['text'] ?></a>
                         <?php
                     }
                     ?>

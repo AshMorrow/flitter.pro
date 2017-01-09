@@ -6,16 +6,20 @@ try {
 
     spl_autoload_register(array('Autoloader', 'load_class'));
 
-    $current_page = strtolower(str_ireplace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']));
-    Menu::$current_page = $current_page;
+    $current_url = array_values(array_filter(explode('/',parse_url($_SERVER['REQUEST_URI'])['path'])));
+
+    Menu::$current_url = (count($current_url) > 0)? $current_url[0]: '';
+
 
     ob_start();
-    Router::getPage($current_page);
+    Router::getPage($current_url);
     $content = ob_get_clean();
+
     ob_start();
-    if($current_page != ''){
+    if(count($current_url) > 0){
         Rendering::$layout = 'secondary_layout';
     }
+
     Rendering::render($content);
     echo ob_get_clean();
 

@@ -24,6 +24,10 @@
     }
 }
 @media only screen and (max-width: 530px) {
+    .main_slider_logo{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
     .main_slide_content{
         margin-left: 3px;
         margin-right: 3px;
