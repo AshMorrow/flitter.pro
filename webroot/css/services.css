@@ -1,5 +1,6 @@
 .services_main_container{
     display: flex;
+    margin-bottom: 50px;
 }
 
 .services_left_wrap{
@@ -9,10 +10,9 @@
 }
 
 .separate_line{
-    margin: 0px 10px;
+    margin: 0 10px;
     width: 2px;
     background: #ebebeb;
-    height: 100%;
     display: flex;
 }
 .services_left_wrap .head{
@@ -55,3 +55,23 @@
     text-align: right;
 }
 
+.list_design_create{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*** ***/
+/*** services items ***/
+
+.deadline{
+    display: flex;
+    align-items: center;
+}
+.deadline .info{
+    font-family: Akrobat;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 15px;
+    align-items: center;
+}

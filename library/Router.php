@@ -35,6 +35,12 @@ class Router
             'services/design' => 'services' . DS . 'design',
             'services/sites' => 'services' . DS . 'sites',
 
+            'services/sites/landing' => 'services' . DS . 'sites'. DS . 'landing',
+            'services/sites/site-card' => 'services' . DS . 'sites'. DS . 'site-card',
+            'services/sites/corporate-websites' => 'services' . DS . 'sites'. DS . 'corporate-websites',
+
+            'services/design/web-design' => 'services' . DS . 'design'. DS .'web-design',
+            'services/design/logotypes' => 'services' . DS . 'design'. DS .'logotypes',
         ];
 
             if ($page_url_count > 1 && array_key_exists($page_name, $multi_level)){

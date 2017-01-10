@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1dd18a3e-5f52-4f57-b301-31ec5406de9c" name="flitter" url="http://stellash.ftp.ukraine.com.ua">
+        <fileTransfer host="stellash.ftp.ukraine.com.ua" port="21" rootFolder="/flitter.pro/www">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
